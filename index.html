@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+
+    <link href="/styles/main.css" rel="stylesheet" />
 </head>
 
 <body>
-    <h1>Component library</h1>
-    <p>I am attending neog.camp and making this component library so I can make a portfolio out of it.</p>
+    <h1>component library</h1>
+    <p>I am attending neog.camp and making this library so can create good portfolio.
+    </p>
 
     <hr>
 
@@ -18,8 +21,8 @@
 
     <h1>This is the biggest heading</h1>
     <h2>This is the second biggest</h2>
-    <p>This is free flowing and will wrap at the end like a paragraph. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit.</p>
+    <p> Let me show you the normal text. This is free flowing and will wrap at the end like a paragraph. </p>
+    <p>This paragraph will have a <strong>bold</strong> text</p>
     <small>This is relatively smaller text</small>
 
     <hr>
@@ -27,98 +30,109 @@
     <h2>@container</h2>
 
     <h3>fluid container</h3>
-    <div>This is a fluid container and it will go till the end of the page</div>
+    <div class="container">This is a fluid container and it will go till the end of the page</div>
 
     <h3>center container</h3>
-    <div>This is a centered container and it will go till the specified width</div>
+    <div class="container container-center">This is a centered container and it will go till the specified width</div>
 
     <hr>
 
     <h2>@links</h2>
 
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary Link</a>
+    <a class="link link-primary" href="/">Primary Link</a>
+    <a class="link link-secondary
+    href="/">Secondary Link</a> <hr>
 
-    <hr>
+        <h2>@lists</h2>
 
-    <h2>@lists</h2>
+        <h3>unordered list</h3>
 
-    <h3>unordered list</h3>
-
-    <ul>
-        <li>Item One</li>
-        <li>Item Two</li>
-        <li>Item Three</li>
-
-    </ul>
-
-    <h3> unordered inline list</h3>
-
-    <ul>
-        <li>Inline Item One</li>
-        <li>Inline Item Two</li>
-        <li>Inline Item Three</li>
-    </ul>
-
-    <h3> reverse ordered list</h3>
-
-    <ol>
-        <li>milk</li>
-        <li>eggs</li>
-        <li>break</li>
-    </ol>
-
-    <hr />
-
-    <h2>@nav</h2>
-
-    <nav>
-        <ul>
-            <li>
-                <a href="">Home</a>
-            </li>
-            <li>
-                <a href="">products</a>
-            </li>
-            <li>
-                <a href="">about</a>
-            </li>
+        <ul class="list-non-bullet">
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
         </ul>
-    </nav>
-
-    <hr>
-    <h2>header</h2>
-
-    <header>
-        <img src="img/header_logo.svg" alt="">
-        <h1>heading inside hero</h1>
-    </header>
 
 
-    <hr>
-    <h2>@section</h2>
-    <section>
-        <h3>white section</h3>
-        <p>This will have white background</p>
-    </section>
 
-    <section>
-        <h3>off white section</h3>
-        <p>This will have gray background</p>
-    </section>
+        <h3> unordered inline list</h3>
 
-    <hr>
-    <h2>@footer
-
-    </h2>
-    <footer>
-        <div>Some small heading inside footer</div>
-        <ul>
-            <li>socialone</li>
-            <li>socialTwo </li>
-            <li>socialThree</li>
+        <ul class="list-non-bullet">
+            <li class="list-item-inline">Inline Item One</li>
+            <li class="list-item-inline">Inline Item Two</li>
+            <li class="list-item-inline">Inline Item Three</li>
         </ul>
-    </footer>
+
+        <h3> reverse ordered list</h3>
+
+        <ol reversed>
+            <li>milk</li>
+            <li>eggs</li>
+            <li>break</li>
+        </ol>
+
+        <hr />
+
+        <h2>@nav</h2>
+
+        <nav class="navigation container">
+            <div class="nav-brand">iAmBrand</div>
+            <ul class="list-non-bullet nav-pills">
+                <li class="list-item-inline
+        ">
+                    <a class="link link-active" href="/">home</a>
+                </li>
+                <li class="list-item-inline
+        ">
+                    <a class="link" href="/">products</a>
+                </li>
+                <li class="list-item-inline
+        ">
+                    <a class="link" href="/">about</a>
+                </li>
+            </ul>
+        </nav>
+
+        <hr>
+
+        <h2>@header</h2>
+
+        <header class="hero">
+            <img class="hero-img" src="/img/header_logo.svg" />
+            <h1 class="hero-heading">heading inside <span class="heading-inverted">header</span></h1>
+        </header>
+
+        <hr>
+        <h2>@section</h2>
+        <section class="section">
+            <div class="container container-center">
+                <h1>white section</h1>
+            <p>This will have white background. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sunt iure quidem possimus, cum consequuntur, pariatur molestiae molestias animi quos quisquam ratione! Nisi, quas fugit?</p>
+            </div>
+        </section>
+
+        <section class="section off">
+            <div class="container container-center">
+                <h1>off white section</h1>
+            <p>This will have gray background. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit deserunt architecto eaque minus, aut perspiciatis incidunt. Excepturi tempore vitae obcaecati nostrum quo velit aliquid sint aliquam repudiandae, dolor molestias sunt.</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <h2>@footer</h2>
+
+        <footer class="footer">
+            <div class="footer-header">Some small heading inside footer</div>
+            <ul class="social-links list-non-bullet">
+                <li class="list-item-inline"><a href="/" class="link">SocialOne</a></li>
+                <li class="list-item-inline"><a href="/" class="link">SocialTwo</a></li>
+                <li class="list-item-inline"><a href="/" class="link">SocialThree</a></li>
+                
+            </ul>
+        </footer>
+
+
 </body>
 
 </html>
